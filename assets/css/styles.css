@@ -21,9 +21,11 @@ div.jumbotron{
   background-image:url(../../assets/img/odell-beckham-jr-wallpaper-nfl-super-catch.jpg);
   background-size:cover;
   height:300px;
-  border-style:groove;
-  margin-top:6%;
-  padding-bottom:350px;
+  border-style:solid;
+  border-top-color: royalblue;
+  border-bottom-color: royalblue;
+  margin-top:5%;
+  padding-bottom:500px;
 }
 
 .jumbotron.h1{
