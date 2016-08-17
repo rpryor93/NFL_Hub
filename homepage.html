@@ -1,18 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Homepage</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/homepage.css">
-</head>
-<body>
 
-    
-    
-    
-    
-    
-    <script src="assets/javascript/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#" id="logo">Brand</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav" id="navbar-buttons">
+                    <li class="active" role="presentation"><a href="#">Home </a></li>
+                    <li role="presentation"><a href="#">About Us</a></li>
+                    <li role="presentation"><a href="#">Login </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 id="head">NFL Hub</h1>
+        <p><a class="btn btn-default" role="button" href="#" id="signup">Sign Up Now</a></p>
+    </div>
+    <footer id="footer">
+        <div class="modal fade" role="dialog" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title">Login </h4></div>
+                    <div class="modal-body">
+                        <p>Username </p>
+                        <input type="password">
+                        <p>Password </p>
+                        <input type="password">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" type="button">Go </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p> </p>
+    </footer>
+    <div class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Sign Up</h4></div>
+                <div class="modal-body">
+                    <p>Name </p>
+                    <input type="text">
+                    <p>Email </p>
+                    <input type="text">
+                    <p>Password</p>
+                    <input type="text">
+                    <p>Re-enter Passwork: </p>
+                    <input type="text">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Cancel </button>
+                    <button class="btn btn-primary" type="button">Submit </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
