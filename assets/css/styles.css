@@ -3,9 +3,15 @@ li{
 
 ul#navbar-buttons.nav.navbar-nav{
   float:right;
+  position:relative;
+  top:20px;
+  font-size:larger;
+  font-family:'Denk One';
+  font-size:20px;
 }
 
 nav.navbar.navbar-default{
+  padding-bottom:5%;
 }
 
 footer#footer{
@@ -18,14 +24,13 @@ footer#footer{
 }
 
 div.jumbotron{
-  background-image:url(../../assets/img/odell-beckham-jr-wallpaper-nfl-super-catch.jpg);
+  background-image:url(odell-beckham-jr-wallpaper-nfl-super-catch.jpg);
   background-size:cover;
   height:300px;
-  border-style:solid;
-  border-top-color: royalblue;
-  border-bottom-color: royalblue;
+  border-style:groove;
   margin-top:5%;
-  padding-bottom:500px;
+  padding-bottom:350px;
+  border-top:rgb(0,133,255);
 }
 
 .jumbotron.h1{
@@ -33,9 +38,14 @@ div.jumbotron{
 
 h1#head{
   font-weight:400;
-  color:white;
   margin-top:8%;
-  text-shadow:1px 1px blue;
+  text-shadow:3px 3px rgb(10,10,13);
+  color:rgb(247,239,239);
+  font-size-adjust:initial;
+  font-family:'Dosis';
+  position:relative;
+  left:3%;
+  font-size:60px;
 }
 
 button#signup.btn.btn-default.btn-lg{
@@ -49,6 +59,24 @@ button#signup.btn.btn-default.btn-lg{
 a#signup.btn.btn-default{
   border-style:groove;
   border-color:white;
-  margin-left:8%;
+  margin-left:15%;
+  background-color:rgb(0,87,255);
+  margin-top:20px;
 }
 
+h1#head.visible-xs-inline-block{
+}
+
+a#logo.navbar-brand.navbar-link{
+  font-size:45px;
+  position:relative;
+  top:20px;
+  font-family:cabin;
+  font-weight:900;
+  color:white;
+  left:20px;
+  text-shadow:1px 1px grey;
+}
+
+body{
+}
