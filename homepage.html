@@ -30,32 +30,13 @@
     </nav>
     <div class="jumbotron">
         <h1 id="head">Follow your team</h1>
-        <p><a class="btn btn-default" role="button" href="http://www.facebook.com" id="signup">Sign Up Now</a></p>
+        <p><a class="btn btn-default" role="button" href="" id="signup">Sign Up Now</a></p>
     </div>
     <footer id="footer">
-        <div class="modal fade" role="dialog" tabindex="-1">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <h4 class="modal-title">Login </h4></div>
-                    <div class="modal-body">
-                        <p>Username </p>
-                        <input type="password">
-                        <p>Password </p>
-                        <input type="password">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-                        <button class="btn btn-primary" type="button">Go </button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <p> </p>
     </footer>
-    <div class="modal fade" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" role="dialog" tabindex="-1" id="signupmodal">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -65,10 +46,8 @@
                     <input type="text">
                     <p>Email </p>
                     <input type="text">
-                    <p>Password</p>
-                    <input type="text">
-                    <p>Re-enter Passwork: </p>
-                    <input type="text">
+                    <p id="locate">How you found us</p>
+                    <input type="text" id="textlocate">
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Cancel </button>

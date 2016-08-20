@@ -81,3 +81,35 @@ a#logo.navbar-brand.navbar-link{
 body{
 }
 
+div.modal-body{
+  background-color:rgb(0,71,255);
+}
+
+p{
+  color:white;
+}
+
+p#locate{
+  float:right;
+  position:relative;
+  bottom:85px;
+  right:200px;
+}
+
+input#textlocate{
+  float:right;
+  position:relative;
+  bottom:57px;
+  right:50px;
+}
+
+h4.modal-title{
+  text-shadow:1px 1px;
+}
+
+div.modal-header{
+  background-color:black;
+  color:rgb(247,239,239);
+  text-shadow:1px 1px 1px #0d3be0;
+}
+
