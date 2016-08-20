@@ -24,7 +24,7 @@ footer#footer{
 }
 
 div.jumbotron{
-  background-image:url(odell-beckham-jr-wallpaper-nfl-super-catch.jpg);
+  background-image:url(../../assets/img/odell-beckham-jr-wallpaper-nfl-super-catch.jpg);
   background-size:cover;
   height:300px;
   border-style:groove;
@@ -80,3 +80,40 @@ a#logo.navbar-brand.navbar-link{
 
 body{
 }
+
+div.modal-body{
+  background-color:rgb(0,71,255);
+}
+
+p{
+  color:white;
+}
+
+p#locate{
+  float:right;
+  position:relative;
+  bottom:85px;
+  right:200px;
+}
+
+input#textlocate{
+  float:right;
+  position:relative;
+  bottom:57px;
+  right:50px;
+}
+
+h4.modal-title{
+  text-shadow:1px 1px;
+}
+
+div.modal-header{
+  background-color:rgb(29,31,33);
+  color:rgb(247,239,239);
+  text-shadow:1px 1px 1px #0d3be0;
+}
+
+div#signupmodal.modal.fade.in{
+  top:100px;
+}
+
