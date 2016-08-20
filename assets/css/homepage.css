@@ -108,8 +108,12 @@ h4.modal-title{
 }
 
 div.modal-header{
-  background-color:black;
+  background-color:rgb(29,31,33);
   color:rgb(247,239,239);
   text-shadow:1px 1px 1px #0d3be0;
+}
+
+div#signupmodal.modal.fade.in{
+  top:100px;
 }
 
