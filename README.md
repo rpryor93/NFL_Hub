@@ -1,2 +1,4 @@
-# NFl_Hub
+# NFL_Hub
 Group Project 1: Team members include - Ian Bowers, Julio Gomez, Rohin Tamang, and Ronnie Pryor
+
+NFL Hub web app will allow NFL fans the opportunity to search team, player, and venue info in a simplistic non-cluttered environment. The lifeblood of this web app and all of its relevant NFL data will be fueled by the incorporation of two very popular sports and venue APIs.  The most important of the two will be the SportsRadar API, which will be the primary provider of all relevant NFL team and player statistics which can easily be searched and viewed by users of this app.  Along with SportsRadar, we will also be working with the Seat-Geek API which will allow users, while visiting NFL Hub, to access all of the in-depth venue and seating info associated with their given team. The goal of NFL Hub is to provide the user with relevant and in depth information, regarding their searched team, and its venue, in a very user friendly environment
