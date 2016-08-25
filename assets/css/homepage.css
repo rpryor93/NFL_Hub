@@ -86,7 +86,7 @@ p#locate{
   right:200px;
 }
 
-input#textlocate{
+input.textlocate{
   float:right;
   position:relative;
   bottom:57px;
