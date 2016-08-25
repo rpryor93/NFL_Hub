@@ -4,18 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFL Hub</title>
-    <link rel="icon" type="image/jpg" href="assets/img/logotilted.jpg">
+    <title>homepage</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Denk+One|Dosis|Fjalla+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Denk+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Denk+One|Dosis">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Denk+One|Dosis|Fjalla+One">
     <link rel="stylesheet" href="assets/css/homepage.css">
-
-    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-
 </head>
 
 <body>
@@ -26,14 +21,20 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav" id="navbar-buttons">
+<<<<<<< HEAD
                     <li role="presentation"><a href="actionpage.html">Home </a></li>
                     <li role="presentation"><a href="about.html">About Us</a></li>
+=======
+                    <li class="active" role="presentation"><a href="#">Home </a></li>
+                    <li role="presentation"><a href="#" data-toggle="modal" data-target="#signupmodal">SignUp</a></li>
+                    <li role="presentation"><a href="#">Team Search</a></li>
+>>>>>>> 3b53527a79267f98b681cc944ff486a25310290c
                 </ul>
             </div>
         </div>
     </nav>
     <div class="jumbotron">
-        <h1 id="head">Follow your team</h1>
+        <h1 id="head">Find your team</h1>
         <p><a class="btn btn-default" role="button" href="" id="signup" data-target="#signupmodal" data-toggle="modal">Sign Up Now</a></p>
     </div>
     <footer id="footer">
@@ -47,84 +48,22 @@
                     <h4 class="modal-title">Sign Up</h4></div>
                 <div class="modal-body">
                     <p>Name </p>
-                    <input type="text" id="nameinput">
+                    <input type="text">
                     <p>Email </p>
-                    <input type="text" id="emailinput">
-                    <p id="locate">How you found us</p>
-                    <input type="text" class="textlocate" id="howDidYouHearinput">
+                    <input type="text">
+                    <p id="locate">How did you find us?</p>
+                    <input type="text" id="textlocate">
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
-                    <button class="btn btn-primary" type="submit" id="addUser">Submit</button>
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Cancel </button>
+                    <button class="btn btn-primary" type="button">Submit </button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="assets/javascript/app.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-
-<script>
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyASDl6V8eqp8GmVrfG-eN3J1ZIl74Dsrvs",
-    authDomain: "nflhub-1ab62.firebaseapp.com",
-    databaseURL: "https://nflhub-1ab62.firebaseio.com",
-    storageBucket: "nflhub-1ab62.appspot.com",
-};
-firebase.initializeApp(config);
-
-var dataRef = firebase.database();
-
-
-// Initial Values
-var name = "";
-var email = "";
-var howDidYouHear = "";
-
-
-// Capture Button Click
-$("#addUser").on("click", function() {
-
-    // YOUR TASK!!!
-    // Dont forget to provide initial data to your Firebase database.
-    name = $('#nameinput').val().trim();
-    email = $('#emailinput').val().trim();
-    howDidYouHear = $('#howDidYouHearinput').val().trim();
-
-
-    // Code for the push
-    dataRef.ref().push({
-        name: name,
-        email: email,
-        howDidYouHear: howDidYouHear,
-        dateAdded: firebase.database.ServerValue.TIMESTAMP
-    });
-    // Don't refresh the page!
-    return false;
-});
-
-//Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
-dataRef.ref().on("child_added", function(childSnapshot) {
-    // Log everything that's coming out of snapshot
-    console.log(childSnapshot.val().name);
-    console.log(childSnapshot.val().email);
-    console.log(childSnapshot.val().howDidYouHear);
-    console.log(childSnapshot.val().joinDate);
-
-// Handle the errors
-}, function(errorObject){
-    //console.log("Errors handled: " + errorObject.code)
-});
-
-dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot){
-    // Change the HTML to reflect
-    $("#namedisplay").html(snapshot.val().name);
-    $("#emaildisplay").html(snapshot.val().email);
-    $("#howDidYouHeardisplay").html(snapshot.val().howDidYouHear);
-})
-</script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
