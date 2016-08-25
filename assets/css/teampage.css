@@ -25,6 +25,7 @@ ul.dropdown-menu{
   font-size:20px;
   height:400px;
   overflow:scroll;
+  top:100px;
 }
 
 body{
@@ -42,7 +43,7 @@ a.navbar-brand.navbar-link{
   top:18px;
   font-family:cabin;
   font-weight:900;
-  color:rgb(250,148,62);
+  color:rgb(48,55,227);
   left:15px;
   text-shadow:2px 2px white;
 }
