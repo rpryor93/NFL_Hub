@@ -39,6 +39,8 @@ $("#addUser").on("click", function() {
 	return false;
 });
 
+
+
 //Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
 dataRef.ref().on("child_added", function(childSnapshot) {
 	// Log everything that's coming out of snapshot
@@ -63,3 +65,12 @@ dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", functio
 	$("#emaildisplay").html(snapshot.val().email);
 	$("#howDidYouHeardisplay").html(snapshot.val().howDidYouHear);
 })
+
+//Link teamsearch button with Team page
+$('#teamsearch').on("click", function(){
+  window.location.href("file:///Users/ronniepryor/Desktop/Bootcamp/Projects/NFl_Hub/teampage.html");   
+    
+  console.log("test");  
+    
+    
+});
