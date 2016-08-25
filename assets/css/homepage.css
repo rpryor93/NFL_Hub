@@ -57,16 +57,13 @@ a#signup.btn.btn-default{
   margin-top:20px;
 }
 
-h1#head.visible-xs-inline-block{
-}
-
 a#logo.navbar-brand.navbar-link{
   font-size:50px;
   position:relative;
   top:18px;
   font-family:cabin;
   font-weight:900;
-  color:rgb(96,98,102);
+  color:rgb(0,87,255);
   left:15px;
   text-shadow:2px 2px white;
 }
@@ -105,5 +102,10 @@ div.modal-header{
 
 div#signupmodal.modal.fade.in{
   top:100px;
+}
+
+p#copyright{
+  text-align:center;
+  font-family:cabin;
 }
 
