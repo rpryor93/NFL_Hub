@@ -1,4 +1,3 @@
-<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js">
 
 
 // Initialize Firebase
@@ -26,7 +25,7 @@ $("#addUser").on("click", function() {
 	// Dont forget to provide initial data to your Firebase database.
 	name = $('#nameinput').val().trim();
 	email = $('#emailinput').val().trim();
-	howDidYouHear = $('#howDidYouHearinput').val().trim();
+	howDidYouHear = $('#howDidYouHearInput').val().trim();
 
 
 	// Code for the push

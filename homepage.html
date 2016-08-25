@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Denk+One|Dosis">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Denk+One|Dosis|Fjalla+One">
     <link rel="stylesheet" href="assets/css/homepage.css">
+    
+     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
 </head>
 
 <body>
@@ -43,22 +46,27 @@
                     <h4 class="modal-title">Sign Up</h4></div>
                 <div class="modal-body">
                     <p>Name </p>
-                    <input type="text">
+                    <input id="nameinput" type="text">
                     <p>Email </p>
-                    <input type="text">
-                    <p id="locate">How did you find us?</p>
-                    <input type="text" id="textlocate">
+                    <input id="emailinput" type="text">
+                    <p>How did you find us?</p>
+                    <input type="text" id="howDidYouHearInput">
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Cancel </button>
-                    <button class="btn btn-primary" type="button">Submit </button>
+                    <button id="addUser" class="btn btn-primary" type="button">Submit </button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script> 
     <script src="assets/js/app.js"></script>
-</body>
+    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   
+   
+    
+
+    </body>
 
 </html>
