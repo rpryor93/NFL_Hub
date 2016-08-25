@@ -1,0 +1,49 @@
+ul.nav.nav-tabs{
+  float:right;
+}
+
+ul.nav.navbar-nav{
+  float:right;
+  position:relative;
+  top:15px;
+  font-family:'Cabin';
+}
+
+button.btn.btn-default.dropdown-toggle{
+  position:absolute;
+  width:40%;
+  left:30%;
+  background-color:rgb(250,148,62);
+  height:80px;
+}
+
+ul.dropdown-menu{
+  width:50%;
+  left:25%;
+  background-color:rgba(6,0,0,0.76);
+  text-shadow:1px 1px 1px rgb(245,245,249);
+  font-size:20px;
+  height:400px;
+  overflow:scroll;
+}
+
+body{
+  background-image:url(../../assets/img/peyton.jpg);
+  background-size:cover;
+}
+
+nav.navbar.navbar-default{
+  height:80px;
+}
+
+a.navbar-brand.navbar-link{
+  font-size:50px;
+  position:relative;
+  top:18px;
+  font-family:cabin;
+  font-weight:900;
+  color:rgb(250,148,62);
+  left:15px;
+  text-shadow:2px 2px white;
+}
+
