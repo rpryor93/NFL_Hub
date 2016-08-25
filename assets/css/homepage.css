@@ -66,7 +66,7 @@ a#logo.navbar-brand.navbar-link{
   top:18px;
   font-family:cabin;
   font-weight:900;
-  color:rgb(0,87,255);
+  color:rgb(96,98,102);
   left:15px;
   text-shadow:2px 2px white;
 }
@@ -86,7 +86,7 @@ p#locate{
   right:200px;
 }
 
-input.textlocate{
+input#textlocate{
   float:right;
   position:relative;
   bottom:57px;
