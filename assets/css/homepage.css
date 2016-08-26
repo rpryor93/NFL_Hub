@@ -64,14 +64,11 @@ a#logo.navbar-brand.navbar-link{
   top:18px;
   font-family:cabin;
   font-weight:900;
-  color:rgb(85,86,89);
+  color:rgba(85,86,89,0.63);
   left:15px;
   text-shadow:2px 2px white;
 }
 
-div.modal-body{
-  background-color:rgb(0,71,255);
-}
 
 p{
   color:white;
@@ -91,22 +88,36 @@ input#textlocate{
   right:50px;
 }
 
-h4.modal-title{
-  text-shadow:1px 1px;
-}
-
-div.modal-header{
-  background-color:rgb(29,31,33);
-  color:rgb(247,239,239);
-  text-shadow:1px 1px 1px #0d3be0;
-}
 
 div#signupmodal.modal.fade.in{
   top:100px;
 }
 
+h4.modal-title{
+  font-family:'Cabin';
+  font-weight:800;
+  text-align:center;
+}
+
+input{
+  border-style:inset;
+  border-color:rgba(128,128,128,0.31);
+}
+
+div.modal-header{
+  background-color:rgba(27,27,33,0.46);
+}
+
+p {
+  color: black;
+  margin-top:15px;
+  font-family:cabin;
+  font-weight:600;
+}
+
 p#copyright{
   text-align:center;
   font-family:cabin;
+  color: white;
 }
 

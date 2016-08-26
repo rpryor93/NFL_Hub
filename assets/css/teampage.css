@@ -22,7 +22,7 @@ ul.dropdown-menu{
   width:50%;
   left:25%;
   background-color:rgba(6,0,0,0.76);
-  text-shadow:1px 1px 1px rgb(245,245,249);
+  text-shadow:1px 1px 1px white;
   font-size:20px;
   height:400px;
   overflow:scroll;
@@ -31,7 +31,7 @@ ul.dropdown-menu{
 
 body{
   background-image:url(../../assets/img/peyton.jpg);
-  background-size:cover;
+  background-size:auto;
 }
 
 nav.navbar.navbar-default{
@@ -44,8 +44,10 @@ a.navbar-brand.navbar-link{
   top:18px;
   font-family:cabin;
   font-weight:900;
-  color:#6d6b6a;
+  color:rgba(85,86,89,0.63);
   left:15px;
   text-shadow:2px 2px white;
 }
+
+
 
