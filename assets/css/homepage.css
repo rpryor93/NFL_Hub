@@ -135,9 +135,9 @@ p#copyright{
 h1#head {
 font-size: 50px;
 font-weight: bold;
-position: absolute;
-top: 120px;
+position: relative;
 left: 50px;
+top: 100px;
     
 }
     }
@@ -145,8 +145,8 @@ left: 50px;
 @media (max-width:767px) {
 a#signup.btn.btn-default {
 position: relative;
-top: 90px;
 left: 45px;
+top: 100px;
 }
     }   
 
