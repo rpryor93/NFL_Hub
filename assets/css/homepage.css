@@ -97,6 +97,9 @@ h4.modal-title{
   font-family:'Cabin';
   font-weight:800;
   text-align:center;
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
 }
 
 input{
@@ -105,7 +108,10 @@ input{
 }
 
 div.modal-header{
-  background-color:rgba(27,27,33,0.46);
+  background-color:grey;
+  border-bottom-style: groove;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
 }
 
 p {
@@ -113,6 +119,7 @@ p {
   margin-top:15px;
   font-family:cabin;
   font-weight:600;
+  font-size: 15px;
 }
 
 p#copyright{
