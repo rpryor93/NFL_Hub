@@ -4,66 +4,128 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams</title>
+    <title>NFL Hub Team Search</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
     <link rel="stylesheet" href="assets/css/teampage.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">NFL Hub</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="homepage.html">NFL Hub</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="active" role="presentation"><a href="https://polar-oasis-72433.herokuapp.com">Home </a></li>
-                    <li role="presentation"><a href="https://polar-oasis-72433.herokuapp.com/teampage.html">Team Search</a></li>
+                    <li class="active" role="presentation"><a href="homepage.html">Home </a></li>
+                    <li role="presentation"><a href="teampage.html">Team Search</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="dropdown open">
-        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true" type="button">Choose a Team</button>
-        <ul class="dropdown-menu" role="menu">
-            <li role="presentation"><a href="#">Arizona Cardinals</a></li>
-            <li role="presentation"><a href="#">Atlanta Falcons</a></li>
-            <li role="presentation"><a href="#">Baltimore Ravens</a></li>
-            <li role="presentation"><a href="#">Buffalo Bills</a></li>
-            <li role="presentation"><a href="#">Carolina Panthers</a></li>
-            <li role="presentation"><a href="#">Chicago Bears</a></li>
-            <li role="presentation"><a href="#">Cincinnati Bengals</a></li>
-            <li role="presentation"><a href="#">Cleveland Browns</a></li>
-            <li role="presentation"><a href="#">Dallas Cowboys</a></li>
-            <li role="presentation"><a href="#">Denver Broncos</a></li>
-            <li role="presentation"><a href="#">Detroit Lions </a></li>
-            <li role="presentation"><a href="#">Green Bay Packers</a></li>
-            <li role="presentation"><a href="#">Houston Texans</a></li>
-            <li role="presentation"><a href="#">Indianapolis Colts</a></li>
-            <li role="presentation"><a href="#">Jacksonville Jaguars</a></li>
-            <li role="presentation"><a href="#">Kansas City Chiefs</a></li>
-            <li role="presentation"><a href="#">Miami Dolphins</a></li>
-            <li role="presentation"><a href="#">Minnesota Vikings</a></li>
-            <li role="presentation"><a href="#">New England Patriots</a></li>
-            <li role="presentation"><a href="#">New Orleans Saints</a></li>
-            <li role="presentation"><a href="#">New York Jets</a></li>
-            <li role="presentation"><a href="#">New York Giants</a></li>
-            <li role="presentation"><a href="#">Oakland Raiders</a></li>
-            <li role="presentation"><a href="#">Philadelphia Eagles</a></li>
-            <li role="presentation"><a href="#">Pittsburgh Steelers</a></li>
-            <li role="presentation"><a href="#">San Diego Chargers</a></li>
-            <li role="presentation"><a href="#">San Francisco 49ers</a></li>
-            <li role="presentation"><a href="#">Seattle Seahawks</a></li>
-            <li role="presentation"><a href="#">St. Louis Rams</a></li>
-            <li role="presentation"><a href="#">Tampa Bay Buccaneers</a></li>
-            <li role="presentation"><a href="#">Tennessee Titans</a></li>
-            <li role="presentation"><a href="#">Washington Redskins</a></li>
-        </ul>
+    <!-- Content container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="dropdown open" id="teamsDropdown">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true" type="button">Choose a Team</button>
+                    <ul class="dropdown-menu" role="menu" id="teamList">
+                        <li role="presentation" value="de760528-1dc0-416a-a978-b510d20692ff"><a href="#">Arizona Cardinals</a></li>
+                        <li role="presentation" value="e6aa13a4-0055-48a9-bc41-be28dc106929"><a href="#">Atlanta Falcons</a></li>
+                        <li role="presentation" value="ebd87119-b331-4469-9ea6-d51fe3ce2f1c"><a href="#">Baltimore Ravens</a></li>
+                        <li role="presentation" value="768c92aa-75ff-4a43-bcc0-f2798c2e1724"><a href="#">Buffalo Bills</a></li>
+                        <li role="presentation" value="f14bf5cc-9a82-4a38-bc15-d39f75ed5314"><a href="#">Carolina Panthers</a></li>
+                        <li role="presentation" value="7b112545-38e6-483c-a55c-96cf6ee49cb8"><a href="#">Chicago Bears</a></li>
+                        <li role="presentation" value="ad4ae08f-d808-42d5-a1e6-e9bc4e34d123"><a href="#">Cincinnati Bengals</a></li>
+                        <li role="presentation" value="d5a2eb42-8065-4174-ab79-0a6fa820e35e"><a href="#">Cleveland Browns</a></li>
+                        <li role="presentation" value="e627eec7-bbae-4fa4-8e73-8e1d6bc5c060"><a href="#">Dallas Cowboys</a></li>
+                        <li role="presentation" value="ce92bd47-93d5-4fe9-ada4-0fc681e6caa0"><a href="#">Denver Broncos</a></li>
+                        <li role="presentation" value="c5a59daa-53a7-4de0-851f-fb12be893e9e"><a href="#">Detroit Lions </a></li>
+                        <li role="presentation" value="a20471b4-a8d9-40c7-95ad-90cc30e46932"><a href="#">Green Bay Packers</a></li>
+                        <li role="presentation" value="82d2d380-3834-4938-835f-aec541e5ece7"><a href="#">Houston Texans</a></li>
+                        <li role="presentation" value="82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"><a href="#">Indianapolis Colts</a></li>
+                        <li role="presentation" value="f7ddd7fa-0bae-4f90-bc8e-669e4d6cf2de"><a href="#">Jacksonville Jaguars</a></li>
+                        <li role="presentation" value="6680d28d-d4d2-49f6-aace-5292d3ec02c2"><a href="#">Kansas City Chiefs</a></li>
+                        <li role="presentation" value="2eff2a03-54d4-46ba-890e-2bc3925548f3"><a href="#">Los Angeles Rams</a></li>
+                        <li role="presentation" value="4809ecb0-abd3-451d-9c4a-92a90b83ca06"><a href="#">Miami Dolphins</a></li>
+                        <li role="presentation" value="33405046-04ee-4058-a950-d606f8c30852"><a href="#">Minnesota Vikings</a></li>
+                        <li role="presentation" value="97354895-8c77-4fd4-a860-32e62ea7382a"><a href="#">New England Patriots</a></li>
+                        <li role="presentation" value="0d855753-ea21-4953-89f9-0e20aff9eb73"><a href="#">New Orleans Saints</a></li>
+                        <li role="presentation" value="5fee86ae-74ab-4bdd-8416-42a9dd9964f3"><a href="#">New York Jets</a></li>
+                        <li role="presentation" value="04aa1c9d-66da-489d-b16a-1dee3f2eec4d"><a href="#">New York Giants</a></li>
+                        <li role="presentation" value="1c1cec48-6352-4556-b789-35304c1a6ae1"><a href="#">Oakland Raiders</a></li>
+                        <li role="presentation" value="86bdbf9-9eea-4869-bb9a-274b0bc66e80"><a href="#">Philadelphia Eagles</a></li>
+                        <li role="presentation" value="cb2f9f1f-ac67-424e-9e72-1475cb0ed398"><a href="#">Pittsburgh Steelers</a></li>
+                        <li role="presentation" value="9dbb9060-ba0f-4920-829e-16d4d9246b5d"><a href="#">San Diego Chargers</a></li>
+                        <li role="presentation" value="f0e724b0-4cbf-495a-be47-013907608da9"><a href="#">San Francisco 49ers</a></li>
+                        <li role="presentation" value="3d08af9e-c767-4f88-a7dc-b920c6d2b4a8"><a href="#">Seattle Seahawks</a></li>
+                        <li role="presentation" value="4254d319-1bc7-4f81-b4ab-b5e6f3402b69"><a href="#">Tampa Bay Buccaneers</a></li>
+                        <li role="presentation" value="d26a1ca5-722d-4274-8f97-c92e49c96315"><a href="#">Tennessee Titans</a></li>
+                        <li role="presentation" value="22052ff7-c065-42ee-bc8f-c4691c50e624"><a href="#">Washington Redskins</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team profile container -->
+        <div class="row" id="teamAndPlayers">
+            <div class="col-md-12">
+                <h1 id="teamData"></h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 small-center">
+                        <div>Alias: <span id="teamAlias"></span></div>
+                    </div>
+                    <div class="col-md-6 small-center">
+                        <div>Coach: <span id="coachName"></span></div>
+                    </div>
+                </div>
+                <div class="row" id="confDivRow">
+                    <div class="col-md-6 small-center">
+                        <div>Conference: <span id="conferenceName"></span></div>
+                    </div>
+                    <div class="col-md-6 small-center">
+                        <div>Division: <span id="divisionName"></span></div>
+                    </div>
+                </div>
+                <div class="row" id="venueRow">
+                    <div class="col-md-4 text-center">
+                        <div>Home: <span id="venueName"></span></div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div>Located: <span id="venueLocation"></span></div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div>Capacity On Game Day: <span id="venueCapacity"></span></div>
+                    </div>
+                </div>
+                <hr>
+                <div id="players">
+                    <h2>Roster</h2>
+                    <div id='offensive'><h3>Offensive</h3></div>
+                    <div id='defensive'><h3>Defensive</h3></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player stats modal -->
+        <div class="modal fade" role="dialog" tabindex="-1" id="playerData">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                        <h4 class="modal-title">Modal Title</h4></div>
+                    <div class="modal-body"></div>
+                    <hr>
+                    <h2 id="stat-title"></h2>
+                    <div id="stat-body"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer id="footer">
-        <p id="copyright">Copyright ©2016 NFL Hub, All Rights Reserved </p>
-    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
